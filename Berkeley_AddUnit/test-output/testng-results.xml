@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="1"
+	failed="4" skipped="0">
+	<reporter-output>
+		<line>
+      <![CDATA[Verified]]>
+		</line>
+	</reporter-output>
+	<suite started-at="2021-06-24T20:30:47 IST" name="Default suite"
+		finished-at="2021-06-24T20:33:21 IST" duration-ms="153745">
+		<groups>
+		</groups>
+		<test started-at="2021-06-24T20:30:47 IST" name="Default test"
+			finished-at="2021-06-24T20:33:21 IST" duration-ms="153745">
+			<class name="login_test.LoginTest">
+				<test-method is-config="true"
+					signature="mainclass()[pri:0, instance:login_test.LoginTest@4e268090]"
+					started-at="2021-06-24T20:30:47 IST" name="mainclass"
+					finished-at="2021-06-24T20:31:34 IST" duration-ms="46686"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- mainclass -->
+				<test-method
+					signature="homepage()[pri:1, instance:login_test.LoginTest@4e268090]"
+					started-at="2021-06-24T20:31:34 IST" name="homepage"
+					finished-at="2021-06-24T20:31:34 IST" duration-ms="23"
+					status="PASS">
+					<reporter-output>
+						<line>
+              <![CDATA[Verified]]>
+						</line>
+					</reporter-output>
+				</test-method> <!-- homepage -->
+				<test-method
+					signature="loginTest()[pri:2, instance:login_test.LoginTest@4e268090]"
+					started-at="2021-06-24T20:31:34 IST" name="loginTest"
+					finished-at="2021-06-24T20:31:34 IST" duration-ms="7" status="FAIL">
+					<exception class="java.lang.NullPointerException">
+						<message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "utilities.Locators.email" is null]]>
+						</message>
+						<full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "utilities.Locators.email" is null
+at berkeley.APN_addition.Login.verifyLogin(Login.java:9)
+at login_test.LoginTest.loginTest(LoginTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+						</full-stacktrace>
+					</exception> <!-- java.lang.NullPointerException -->
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- loginTest -->
+				<test-method
+					signature="findAPN()[pri:3, instance:login_test.LoginTest@4e268090]"
+					started-at="2021-06-24T20:31:34 IST" name="findAPN"
+					finished-at="2021-06-24T20:31:36 IST" duration-ms="2012"
+					status="FAIL">
+					<exception class="java.lang.NullPointerException">
+						<message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because "utilities.Locators.preparingForRegistration" is null]]>
+						</message>
+						<full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "utilities.Locators.preparingForRegistration" is null
+at berkeley.APN_addition.APN_Find.findAnAPN(APN_Find.java:19)
+at login_test.LoginTest.findAPN(LoginTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+						</full-stacktrace>
+					</exception> <!-- java.lang.NullPointerException -->
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- findAPN -->
+				<test-method
+					signature="loginTest1()[pri:4, instance:login_test.LoginTest@4e268090]"
+					started-at="2021-06-24T20:31:36 IST" name="loginTest1"
+					finished-at="2021-06-24T20:31:36 IST" duration-ms="1" status="FAIL">
+					<exception class="java.lang.NullPointerException">
+						<message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "utilities.Locators.email" is null]]>
+						</message>
+						<full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "utilities.Locators.email" is null
+at berkeley.APN_addition.Login.verifyLogin(Login.java:9)
+at login_test.LoginTest.loginTest1(LoginTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+						</full-stacktrace>
+					</exception> <!-- java.lang.NullPointerException -->
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- loginTest1 -->
+				<test-method
+					signature="APN_CitizenAdd()[pri:5, instance:login_test.LoginTest@4e268090]"
+					started-at="2021-06-24T20:31:36 IST" name="APN_CitizenAdd"
+					finished-at="2021-06-24T20:31:39 IST" duration-ms="3008"
+					status="FAIL">
+					<exception class="java.lang.NullPointerException">
+						<message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because "utilities.Locators.addProperty" is null]]>
+						</message>
+						<full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "utilities.Locators.addProperty" is null
+at berkeley.APN_addition.Citizen_APN_add.citizenAPNadd(Citizen_APN_add.java:19)
+at login_test.LoginTest.APN_CitizenAdd(LoginTest.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+						</full-stacktrace>
+					</exception> <!-- java.lang.NullPointerException -->
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- APN_CitizenAdd -->
+				<test-method is-config="true"
+					signature="close()[pri:0, instance:login_test.LoginTest@4e268090]"
+					started-at="2021-06-24T20:31:39 IST" name="close"
+					finished-at="2021-06-24T20:33:21 IST" duration-ms="101931"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- close -->
+			</class> <!-- login_test.LoginTest -->
+		</test> <!-- Default test -->
+	</suite> <!-- Default suite -->
+</testng-results>
